@@ -1,28 +1,7 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The schema for the current database is in the parent folder and titled schema.txt. 
 
-Things you may want to cover:
+The landing page for users and posts, respectively, are located at /users and /posts. They display all of the current users/posts and give the option for creating new ones.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To run, navigate into hw04app and run "rails s" on command line. Direct your browser to localhost:3000 and append /users or /posts in order to see anything of interest (i.e. not Ruby on Rails default templating - sorry, got lazy).

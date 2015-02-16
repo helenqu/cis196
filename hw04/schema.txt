@@ -1,7 +1,9 @@
-Table 1: Songs
-title: string
-artist: string
+Table 1: Users
+name: string
+posts: text
 
-Table 2: Foods
-cuisine: string
-cost: int
+Table 2: Posts
+user: string
+latitude: float
+longitude: float
+content: text
