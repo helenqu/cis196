@@ -1,0 +1,7 @@
+Table 1: Songs
+title: string
+artist: string
+
+Table 2: Foods
+cuisine: string
+cost: int
