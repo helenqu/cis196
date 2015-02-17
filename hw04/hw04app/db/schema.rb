@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150216185204) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "posts", force: true do |t|
     t.string   "user"
     t.float    "lat"
