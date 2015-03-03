@@ -1,9 +1,0 @@
-Table 1: Users
-name: string
-posts: text
-
-Table 2: Posts
-user: string
-latitude: float
-longitude: float
-content: text
