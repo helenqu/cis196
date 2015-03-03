@@ -4,4 +4,8 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+	validates :posts, length: {minimum: 5}
+	validates :posts, length: {maximum: 150}, presence: true
+
 end
