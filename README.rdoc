@@ -1,7 +1,0 @@
-== README
-
-The schema for the current database is in the parent folder and titled schema.txt. 
-
-The landing page for users and posts, respectively, are located at /users and /posts. They display all of the current users/posts and give the option for creating new ones.
-
-To run, navigate into hw04app and run "rails s" on command line. Direct your browser to localhost:3000 and append /users or /posts in order to see anything of interest (i.e. not Ruby on Rails default templating - sorry, got lazy).
