@@ -8,11 +8,8 @@ default: &default
   adapter: sqlite3
   pool: 5
   timeout: 5000
-<<<<<<< HEAD
   username: postgresql
   password:
-=======
->>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
 
 #development:
   #<<: *default
@@ -31,7 +28,6 @@ development:
   encoding: utf8
   database: health_tracking
   pool: 5
-<<<<<<< HEAD
   username: sqlite3
   password:
 
@@ -42,25 +38,20 @@ test: &TEST
   pool: 5
   username: sqlite3
   password:
-=======
 
 test: &TEST
   adapter: postgresql
   encoding: utf8
   database: project_test
   pool: 5
->>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
 
 production:
   adapter: postgresql
   encoding: utf8
   database: project_production
   pool: 5
-<<<<<<< HEAD
   username: postgresql
   password:
-=======
->>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
   
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
