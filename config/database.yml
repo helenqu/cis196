@@ -39,12 +39,6 @@ test: &TEST
   username: sqlite3
   password:
 
-test: &TEST
-  adapter: postgresql
-  encoding: utf8
-  database: project_test
-  pool: 5
-
 production:
   adapter: postgresql
   encoding: utf8
