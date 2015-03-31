@@ -7,20 +7,14 @@ class PostsController < ApplicationController
 <<<<<<< HEAD
     @posts = Post.order(user: :desc).limit(3).all
     @posts2 = Post.where(lat: '39.95').offset(1).all
-=======
-    @posts = Post.all
->>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
-<<<<<<< HEAD
     @post = Post.find(params[:id])
     # @comment = Comment.new
     # @comments = Comment.where(post_id: params[:id])
-=======
->>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
   end
 
   # GET /posts/new
