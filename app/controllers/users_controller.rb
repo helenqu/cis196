@@ -4,22 +4,15 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-<<<<<<< HEAD
     @users = User.order(name: :asc).all
-=======
     @users = User.all
->>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
-<<<<<<< HEAD
     @user = User.find(params[:id])
     @posts = Post.where(user_id: @user.id)
-
-=======
->>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
   end
 
   # GET /users/new
@@ -64,7 +57,6 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-<<<<<<< HEAD
     @user = User.find(params[:id])
     @user.destroy
     redirect_to users_path
@@ -74,13 +66,11 @@ class UsersController < ApplicationController
     #   format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
     #   format.json { head :no_content }
     # end
-=======
-    @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
-      format.json { head :no_content }
+    # @user.destroy
+    # respond_to do |format|
+    #   format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+    #   format.json { head :no_content }
     end
->>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
   end
 
   private
@@ -91,10 +81,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-<<<<<<< HEAD
       params.require(:user).permit(:name, :posts, :email, :password)
-=======
-      params.require(:user).permit(:name, :posts)
->>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
     end
 end
