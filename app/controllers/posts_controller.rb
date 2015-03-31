@@ -4,16 +4,23 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+<<<<<<< HEAD
     @posts = Post.order(user: :desc).limit(3).all
     @posts2 = Post.where(lat: '39.95').offset(1).all
+=======
+    @posts = Post.all
+>>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
+<<<<<<< HEAD
     @post = Post.find(params[:id])
     # @comment = Comment.new
     # @comments = Comment.where(post_id: params[:id])
+=======
+>>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
   end
 
   # GET /posts/new
@@ -58,6 +65,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
+<<<<<<< HEAD
     @post = Post.find(params[:id])
     @post.destroy
     redirect_to users_path
@@ -66,6 +74,13 @@ class PostsController < ApplicationController
     #   format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
     #   format.json { head :no_content }
     # end
+=======
+    @post.destroy
+    respond_to do |format|
+      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+>>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
   end
 
   private

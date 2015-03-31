@@ -4,7 +4,11 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
+<<<<<<< HEAD
 group :development, :test do
+=======
+group :development do
+>>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
 		gem 'sqlite3'
 end
 

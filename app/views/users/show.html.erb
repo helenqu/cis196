@@ -10,6 +10,7 @@
   <%= @user.posts %>
 </p>
 
+<<<<<<< HEAD
 <% @posts.each do |post| %>
 <div class="dash-review">
  <h2><%= link_to post.title, post_path(post.id) %></h2>
@@ -18,5 +19,7 @@
 </div>
 <%end%>
 
+=======
+>>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

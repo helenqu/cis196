@@ -16,7 +16,11 @@
         <td><%= user.posts %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
+<<<<<<< HEAD
         <td><%= link_to "Destroy", user, confirm: "Are you sure?", method: :delete %></td>
+=======
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
       </tr>
     <% end %>
   </tbody>

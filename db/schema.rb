@@ -24,9 +24,13 @@ ActiveRecord::Schema.define(version: 20150216185204) do
 
   create_table "users", force: true do |t|
     t.string   "name"
+<<<<<<< HEAD
     t.string   "email"
     t.text     "posts"
     t.string   "password"
+=======
+    t.text     "posts"
+>>>>>>> 06db2904bcca9c8a3857be579054a2f5ba3409a2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
