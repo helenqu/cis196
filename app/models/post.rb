@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
 
 presence = /[0-9]+/
-
+	belongs_to :user
 	validates :lat, presence: true
 	validates :long, presence: true
 

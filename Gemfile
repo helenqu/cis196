@@ -6,6 +6,7 @@ gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 		gem 'sqlite3'
+		gem 'pry'
 end
 
 group :production do
@@ -52,4 +53,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 gem 'rails_12factor', group: :production
 
-ruby '2.1.5'
+ruby '2.1.4'

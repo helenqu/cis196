@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20150216185204) do
     t.string   "email"
     t.text     "posts"
     t.string   "password"
-    t.text     "posts"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
